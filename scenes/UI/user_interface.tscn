@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://xfeon26dc8vt"]
+
+[node name="UserInterface" type="CanvasLayer"]
+layer = 100
+
+[node name="ActionBar" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ActionScrollContainer" type="ScrollContainer" parent="ActionBar"]
+layout_mode = 0
+offset_top = 448.0
+offset_right = 1152.0
+offset_bottom = 640.0
+vertical_scroll_mode = 0
+
+[node name="ActionCategoriesVBox" type="VBoxContainer" parent="ActionBar/ActionScrollContainer"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NonCharHBox" type="HBoxContainer" parent="ActionBar/ActionScrollContainer/ActionCategoriesVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="CharcacterHBox" type="HBoxContainer" parent="ActionBar/ActionScrollContainer/ActionCategoriesVBox"]
+layout_mode = 2
+size_flags_vertical = 3

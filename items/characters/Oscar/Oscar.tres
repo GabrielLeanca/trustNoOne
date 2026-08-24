@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3 uid="uid://wqkngdkw0bqb"]
+
+[ext_resource type="Script" uid="uid://6moxks0w7ika" path="res://customResources/CharacterResource.gd" id="1_sijuk"]
+
+[resource]
+script = ExtResource("1_sijuk")
+id = ""
+display_name = ""
+ability = ""
+price = 0
+goal = ""
+noTargets = 0
+needsOnlyOneTarget = false
+metadata/_custom_type_script = "uid://6moxks0w7ika"
