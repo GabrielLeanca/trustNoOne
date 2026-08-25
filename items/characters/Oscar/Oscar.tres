@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3 uid="uid://wqkngdkw0bqb"]
+[gd_resource type="Resource" script_class="CharacterData" load_steps=3 format=3 uid="uid://wqkngdkw0bqb"]
 
-[ext_resource type="Script" uid="uid://6moxks0w7ika" path="res://customResources/CharacterResource.gd" id="1_sijuk"]
+[ext_resource type="Texture2D" uid="uid://dqy8fmu1ydgnv" path="res://assets/characterPortraits/oscar.png" id="1_n5ae4"]
+[ext_resource type="Script" uid="uid://6moxks0w7ika" path="res://customResources/CharacterResource.gd" id="2_sfa5y"]
 
 [resource]
-script = ExtResource("1_sijuk")
+script = ExtResource("2_sfa5y")
 id = ""
-display_name = ""
+display_name = "Oscar"
+icon = ExtResource("1_n5ae4")
 ability = ""
 price = 0
 goal = ""

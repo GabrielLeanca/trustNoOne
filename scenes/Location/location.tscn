@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://2phwkaffg6da"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-100, 0, -50, -86.6, 50, -86.6, 100, 0, 50, 86.6, -50, 86.6)
+
+[node name="Line2D" type="Line2D" parent="Area2D"]
+points = PackedVector2Array(-100, 0, -50, -86.6, 50, -86.6, 100, 0, 50, 86.6, -50, 86.6, -100, 0)
+default_color = Color(0, 0, 0, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2

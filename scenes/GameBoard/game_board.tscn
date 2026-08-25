@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dipd0hkjluiol"]
+
+[ext_resource type="Script" uid="uid://bonap78c1r03t" path="res://scenes/GameBoard/game_board.gd" id="1_y8vs0"]
+[ext_resource type="PackedScene" uid="uid://2phwkaffg6da" path="res://scenes/Location/location.tscn" id="2_e2g2t"]
+
+[node name="GameBoard" type="Node2D"]
+script = ExtResource("1_y8vs0")
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Location" parent="Map" instance=ExtResource("2_e2g2t")]
+position = Vector2(0, 144)
+
+[node name="Node2D" parent="Map" instance=ExtResource("2_e2g2t")]
+position = Vector2(296, -56)
+
+[node name="Node2D2" parent="Map" instance=ExtResource("2_e2g2t")]
+position = Vector2(-72, -152)
+
+[node name="Node2D3" parent="Map" instance=ExtResource("2_e2g2t")]
+position = Vector2(-288, 8)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="ready" from="." to="." method="_on_ready"]
