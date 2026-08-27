@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d16ureq4q7s0x" path="res://scenes/Route/route.gd" id="1_gvrrw"]
 
 [node name="Route" type="Node2D" unique_id=783598289]
+modulate = Color(0, 0, 0, 1)
 script = ExtResource("1_gvrrw")
 
 [node name="Line2D" type="Line2D" parent="." unique_id=808605544]

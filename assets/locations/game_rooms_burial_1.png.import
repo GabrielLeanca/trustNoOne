@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3ggrqi1v8liv"
-path="res://.godot/imported/game_rooms_barial_1.png-1b552897d195f28259ea37ddaf3a6e7c.ctex"
+path="res://.godot/imported/game_rooms_burial_1.png-69397b801a53bce7e840329d45f912d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/locations/game_rooms_barial_1.png"
-dest_files=["res://.godot/imported/game_rooms_barial_1.png-1b552897d195f28259ea37ddaf3a6e7c.ctex"]
+source_file="res://assets/locations/game_rooms_burial_1.png"
+dest_files=["res://.godot/imported/game_rooms_burial_1.png-69397b801a53bce7e840329d45f912d8.ctex"]
 
 [params]
 

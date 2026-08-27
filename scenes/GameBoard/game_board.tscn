@@ -2,10 +2,158 @@
 
 [ext_resource type="Script" uid="uid://bonap78c1r03t" path="res://scenes/GameBoard/game_board.gd" id="1_y8vs0"]
 [ext_resource type="PackedScene" uid="uid://2phwkaffg6da" path="res://scenes/Location/location.tscn" id="2_e2g2t"]
+[ext_resource type="PackedScene" uid="uid://bmvk445eqleaq" path="res://scenes/Route/route.tscn" id="2_vanu7"]
 [ext_resource type="Script" uid="uid://dfirl7c75sb4u" path="res://scenes/GameBoard/camera_2d.gd" id="3_50yu2"]
 
 [node name="GameBoard" type="Node2D" unique_id=1430048051]
 script = ExtResource("1_y8vs0")
+
+[node name="Routes" type="Node2D" parent="." unique_id=2018038044]
+
+[node name="Route" parent="Routes" unique_id=783598289 instance=ExtResource("2_vanu7")]
+position = Vector2(-367.99997, -7.999996)
+rotation = 0.21109334
+scale = Vector2(6.7774158, 1)
+
+[node name="Route2" parent="Routes" unique_id=1965867682 instance=ExtResource("2_vanu7")]
+position = Vector2(-704.00006, -392)
+rotation = 0.93830884
+scale = Vector2(7.324463, 1)
+
+[node name="Route3" parent="Routes" unique_id=934629780 instance=ExtResource("2_vanu7")]
+position = Vector2(0, 32)
+rotation = -1.808417
+scale = Vector2(6.2185125, 1)
+
+[node name="Route4" parent="Routes" unique_id=1192889277 instance=ExtResource("2_vanu7")]
+position = Vector2(-624, -488)
+rotation = -0.29696962
+scale = Vector2(9.623827, 1)
+
+[node name="Route5" parent="Routes" unique_id=1894618995 instance=ExtResource("2_vanu7")]
+position = Vector2(24, -688)
+rotation = -0.346232
+scale = Vector2(8.850577, 1)
+
+[node name="Route6" parent="Routes" unique_id=773870537 instance=ExtResource("2_vanu7")]
+position = Vector2(16, -320)
+rotation = -0.25852597
+scale = Vector2(8.398224, 1)
+
+[node name="Route7" parent="Routes" unique_id=1820713487 instance=ExtResource("2_vanu7")]
+position = Vector2(32, -608)
+rotation = 0.25266105
+scale = Vector2(8.837402, 1)
+
+[node name="Route8" parent="Routes" unique_id=1309773509 instance=ExtResource("2_vanu7")]
+position = Vector2(464, -352)
+rotation = 1.5527291
+scale = Vector2(4.4008913, 1)
+
+[node name="Route9" parent="Routes" unique_id=201610362 instance=ExtResource("2_vanu7")]
+position = Vector2(544, -528)
+rotation = -0.4072556
+scale = Vector2(9.740649, 1)
+
+[node name="Route10" parent="Routes" unique_id=802141238 instance=ExtResource("2_vanu7")]
+position = Vector2(592, -896)
+rotation = 0.20258354
+scale = Vector2(7.8964515, 1)
+
+[node name="Route11" parent="Routes" unique_id=807983295 instance=ExtResource("2_vanu7")]
+position = Vector2(1064, -672)
+rotation = 1.8062041
+scale = Vector2(5.518201, 1)
+
+[node name="Route12" parent="Routes" unique_id=1475296149 instance=ExtResource("2_vanu7")]
+position = Vector2(984.00006, -216.00002)
+rotation = 1.4189796
+scale = Vector2(3.4598916, 1)
+
+[node name="Route13" parent="Routes" unique_id=2130856094 instance=ExtResource("2_vanu7")]
+position = Vector2(544, -120)
+rotation = -0.34646794
+scale = Vector2(8.174263, 1)
+
+[node name="Route14" parent="Routes" unique_id=1931829248 instance=ExtResource("2_vanu7")]
+position = Vector2(560, -40)
+rotation = 0.17959905
+scale = Vector2(9.02489, 1)
+
+[node name="Route15" parent="Routes" unique_id=1700271776 instance=ExtResource("2_vanu7")]
+position = Vector2(-136, -752)
+rotation = -2.5085628
+scale = Vector2(10.824802, 1)
+
+[node name="Route16" parent="Routes" unique_id=1262939130 instance=ExtResource("2_vanu7")]
+position = Vector2(-552, -1112)
+rotation = -0.0656785
+scale = Vector2(8.49275, 1)
+
+[node name="Route17" parent="Routes" unique_id=1665248405 instance=ExtResource("2_vanu7")]
+position = Vector2(16, -1184)
+rotation = -0.2697605
+scale = Vector2(8.19705, 1)
+
+[node name="Route18" parent="Routes" unique_id=1489550318 instance=ExtResource("2_vanu7")]
+position = Vector2(520, -1304)
+rotation = 0.074535005
+scale = Vector2(9.307647, 1)
+
+[node name="Route19" parent="Routes" unique_id=1959734238 instance=ExtResource("2_vanu7")]
+position = Vector2(424, -1192)
+rotation = 1.4049819
+scale = Vector2(6.1224, 1)
+
+[node name="Route20" parent="Routes" unique_id=440468332 instance=ExtResource("2_vanu7")]
+position = Vector2(1064, -888)
+rotation = -1.562447
+scale = Vector2(6.3591456, 1)
+
+[node name="Route21" parent="Routes" unique_id=1338676518 instance=ExtResource("2_vanu7")]
+position = Vector2(1152, -1256)
+rotation = 0.46551016
+scale = Vector2(6.5628924, 1)
+
+[node name="Route22" parent="Routes" unique_id=2027918836 instance=ExtResource("2_vanu7")]
+position = Vector2(1136, -856)
+rotation = -0.5144657
+scale = Vector2(6.727539, 1)
+
+[node name="Route23" parent="Routes" unique_id=1926336595 instance=ExtResource("2_vanu7")]
+position = Vector2(1112, -8)
+rotation = -0.31235078
+scale = Vector2(5.9598975, 1)
+
+[node name="Route24" parent="Routes" unique_id=1214611485 instance=ExtResource("2_vanu7")]
+position = Vector2(1520, -240)
+rotation = -1.0706981
+scale = Vector2(5.632009, 1)
+
+[node name="Route25" parent="Routes" unique_id=1799121359 instance=ExtResource("2_vanu7")]
+position = Vector2(1744, -616)
+rotation = -0.6888878
+scale = Vector2(8.2706585, 1)
+
+[node name="Route26" parent="Routes" unique_id=115451812 instance=ExtResource("2_vanu7")]
+position = Vector2(1576, -1136)
+rotation = -0.70516455
+scale = Vector2(6.1304736, 1)
+
+[node name="Route27" parent="Routes" unique_id=759240411 instance=ExtResource("2_vanu7")]
+position = Vector2(1952, -1304)
+rotation = 1.1527957
+scale = Vector2(7.169457, 1)
+
+[node name="Route28" parent="Routes" unique_id=1852165351 instance=ExtResource("2_vanu7")]
+position = Vector2(1552, -968)
+rotation = 1.2559236
+scale = Vector2(7.4561133, 1)
+
+[node name="Route29" parent="Routes" unique_id=719336921 instance=ExtResource("2_vanu7")]
+position = Vector2(1160, -736)
+rotation = 0.40576965
+scale = Vector2(11.892666, 1)
 
 [node name="Map" type="Node2D" parent="." unique_id=283144555]
 
@@ -13,57 +161,61 @@ script = ExtResource("1_y8vs0")
 position = Vector2(0, 144)
 
 [node name="Node2D" parent="Map" unique_id=1382840208 instance=ExtResource("2_e2g2t")]
-position = Vector2(296, -56)
+position = Vector2(464, -56)
 
 [node name="Node2D2" parent="Map" unique_id=1384561897 instance=ExtResource("2_e2g2t")]
-position = Vector2(-72, -152)
+position = Vector2(-88, -296)
 
 [node name="Node2D3" parent="Map" unique_id=534435143 instance=ExtResource("2_e2g2t")]
-position = Vector2(-288, 8)
+position = Vector2(-472, -24)
 
 [node name="Node2D4" parent="Map" unique_id=423447346 instance=ExtResource("2_e2g2t")]
-position = Vector2(-400, -352)
+position = Vector2(-720, -448)
 
 [node name="Node2D5" parent="Map" unique_id=1731290586 instance=ExtResource("2_e2g2t")]
-position = Vector2(-40, -432)
+position = Vector2(472, -464)
 
 [node name="Node2D6" parent="Map" unique_id=175114452 instance=ExtResource("2_e2g2t")]
-position = Vector2(320, -448)
+position = Vector2(1064, -784)
 
 [node name="Node2D7" parent="Map" unique_id=1953314388 instance=ExtResource("2_e2g2t")]
-position = Vector2(568, -312)
+position = Vector2(984, -320)
 
 [node name="Node2D8" parent="Map" unique_id=932333608 instance=ExtResource("2_e2g2t")]
-position = Vector2(-352, -712)
+position = Vector2(-648, -1112)
 
 [node name="Node2D9" parent="Map" unique_id=817316429 instance=ExtResource("2_e2g2t")]
-position = Vector2(-56, -784)
+position = Vector2(-72, -672)
 
 [node name="Node2D10" parent="Map" unique_id=2094231831 instance=ExtResource("2_e2g2t")]
-position = Vector2(328, -784)
+position = Vector2(488, -896)
 
 [node name="Node2D11" parent="Map" unique_id=1879413588 instance=ExtResource("2_e2g2t")]
-position = Vector2(600, 40)
+position = Vector2(1016, 32)
 
 [node name="Node2D12" parent="Map" unique_id=1733145140 instance=ExtResource("2_e2g2t")]
-position = Vector2(848, -144)
+position = Vector2(1472, -152)
 
 [node name="Node2D13" parent="Map" unique_id=1287255004 instance=ExtResource("2_e2g2t")]
-position = Vector2(840, -536)
+position = Vector2(1688, -536)
 
 [node name="Node2D14" parent="Map" unique_id=1609052314 instance=ExtResource("2_e2g2t")]
-position = Vector2(680, -808)
+position = Vector2(1512, -1064)
 
 [node name="Node2D15" parent="Map" unique_id=402800751 instance=ExtResource("2_e2g2t")]
-position = Vector2(-80, -1080)
+position = Vector2(-88, -1168)
 
 [node name="Node2D16" parent="Map" unique_id=2127598735 instance=ExtResource("2_e2g2t")]
-position = Vector2(312, -1088)
+position = Vector2(416, -1304)
 
 [node name="Node2D17" parent="Map" unique_id=1900583531 instance=ExtResource("2_e2g2t")]
-position = Vector2(672, -1144)
+position = Vector2(1056, -1272)
 
-[node name="Routes" type="Node2D" parent="." unique_id=2018038044]
+[node name="Node2D18" parent="Map" unique_id=1909713092 instance=ExtResource("2_e2g2t")]
+position = Vector2(1904, -1392)
+
+[node name="Node2D19" parent="Map" unique_id=869010811 instance=ExtResource("2_e2g2t")]
+position = Vector2(2120, -920)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=237207130]
 script = ExtResource("3_50yu2")
