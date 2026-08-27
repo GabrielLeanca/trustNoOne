@@ -1,27 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://dipd0hkjluiol"]
+[gd_scene format=3 uid="uid://dipd0hkjluiol"]
 
 [ext_resource type="Script" uid="uid://bonap78c1r03t" path="res://scenes/GameBoard/game_board.gd" id="1_y8vs0"]
 [ext_resource type="PackedScene" uid="uid://2phwkaffg6da" path="res://scenes/Location/location.tscn" id="2_e2g2t"]
+[ext_resource type="Script" uid="uid://dfirl7c75sb4u" path="res://scenes/GameBoard/camera_2d.gd" id="3_50yu2"]
 
-[node name="GameBoard" type="Node2D"]
+[node name="GameBoard" type="Node2D" unique_id=1430048051]
 script = ExtResource("1_y8vs0")
 
-[node name="Map" type="Node2D" parent="."]
+[node name="Map" type="Node2D" parent="." unique_id=283144555]
 
-[node name="Location" parent="Map" instance=ExtResource("2_e2g2t")]
+[node name="Location" parent="Map" unique_id=424216908 instance=ExtResource("2_e2g2t")]
 position = Vector2(0, 144)
 
-[node name="Node2D" parent="Map" instance=ExtResource("2_e2g2t")]
+[node name="Node2D" parent="Map" unique_id=1382840208 instance=ExtResource("2_e2g2t")]
 position = Vector2(296, -56)
 
-[node name="Node2D2" parent="Map" instance=ExtResource("2_e2g2t")]
+[node name="Node2D2" parent="Map" unique_id=1384561897 instance=ExtResource("2_e2g2t")]
 position = Vector2(-72, -152)
 
-[node name="Node2D3" parent="Map" instance=ExtResource("2_e2g2t")]
+[node name="Node2D3" parent="Map" unique_id=534435143 instance=ExtResource("2_e2g2t")]
 position = Vector2(-288, 8)
 
-[node name="Routes" type="Node2D" parent="."]
+[node name="Routes" type="Node2D" parent="." unique_id=2018038044]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=237207130]
+script = ExtResource("3_50yu2")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
