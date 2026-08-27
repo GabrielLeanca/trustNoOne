@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c1rdij4fkjd8p"]
+
+[ext_resource type="Texture2D" uid="uid://c1r41v4irbxdj" path="res://assets/map/game_frame.png" id="1_sxf4j"]
+[ext_resource type="PackedScene" uid="uid://b42utfkijwdh2" path="res://scenes/game/game.tscn" id="2_tqkkf"]
+
+[node name="Root" type="Node2D" unique_id=515462658]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1487996832]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=484868629]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sxf4j")
+expand_mode = 1
+
+[node name="Game" parent="." unique_id=1142056420 instance=ExtResource("2_tqkkf")]
+position = Vector2(962, 541)
