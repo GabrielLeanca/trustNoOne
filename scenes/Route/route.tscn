@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bmvk445eqleaq"]
 
-[node name="Route" type="Node2D"]
+[ext_resource type="Script" uid="uid://d16ureq4q7s0x" path="res://scenes/Route/route.gd" id="1_gvrrw"]
 
-[node name="Line2D" type="Line2D" parent="."]
+[node name="Route" type="Node2D" unique_id=783598289]
+script = ExtResource("1_gvrrw")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=808605544]
 points = PackedVector2Array(0, 0, 50, 0)

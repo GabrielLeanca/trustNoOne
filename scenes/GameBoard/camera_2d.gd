@@ -2,7 +2,7 @@ extends Camera2D
 
 @export var zoom_speed: float = 0.1
 @export var min_zoom: float = 0.5
-@export var max_zoom: float = 3.0
+@export var max_zoom: float = 1.0
 @export var keyboard_pan_speed: float = 750.0
 var dragging := false
 var _pan_keys := {
@@ -14,10 +14,10 @@ var _pan_keys := {
 
 func _ready() -> void:
 	make_current()
-	limit_left = -500
-	limit_top = -400
-	limit_right = 600
-	limit_bottom = 400
+	limit_left = -1000
+	limit_top = -1600
+	limit_right = 1800
+	limit_bottom = 700
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and not event.echo:

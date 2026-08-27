@@ -21,6 +21,48 @@ position = Vector2(-72, -152)
 [node name="Node2D3" parent="Map" unique_id=534435143 instance=ExtResource("2_e2g2t")]
 position = Vector2(-288, 8)
 
+[node name="Node2D4" parent="Map" unique_id=423447346 instance=ExtResource("2_e2g2t")]
+position = Vector2(-400, -352)
+
+[node name="Node2D5" parent="Map" unique_id=1731290586 instance=ExtResource("2_e2g2t")]
+position = Vector2(-40, -432)
+
+[node name="Node2D6" parent="Map" unique_id=175114452 instance=ExtResource("2_e2g2t")]
+position = Vector2(320, -448)
+
+[node name="Node2D7" parent="Map" unique_id=1953314388 instance=ExtResource("2_e2g2t")]
+position = Vector2(568, -312)
+
+[node name="Node2D8" parent="Map" unique_id=932333608 instance=ExtResource("2_e2g2t")]
+position = Vector2(-352, -712)
+
+[node name="Node2D9" parent="Map" unique_id=817316429 instance=ExtResource("2_e2g2t")]
+position = Vector2(-56, -784)
+
+[node name="Node2D10" parent="Map" unique_id=2094231831 instance=ExtResource("2_e2g2t")]
+position = Vector2(328, -784)
+
+[node name="Node2D11" parent="Map" unique_id=1879413588 instance=ExtResource("2_e2g2t")]
+position = Vector2(600, 40)
+
+[node name="Node2D12" parent="Map" unique_id=1733145140 instance=ExtResource("2_e2g2t")]
+position = Vector2(848, -144)
+
+[node name="Node2D13" parent="Map" unique_id=1287255004 instance=ExtResource("2_e2g2t")]
+position = Vector2(840, -536)
+
+[node name="Node2D14" parent="Map" unique_id=1609052314 instance=ExtResource("2_e2g2t")]
+position = Vector2(680, -808)
+
+[node name="Node2D15" parent="Map" unique_id=402800751 instance=ExtResource("2_e2g2t")]
+position = Vector2(-80, -1080)
+
+[node name="Node2D16" parent="Map" unique_id=2127598735 instance=ExtResource("2_e2g2t")]
+position = Vector2(312, -1088)
+
+[node name="Node2D17" parent="Map" unique_id=1900583531 instance=ExtResource("2_e2g2t")]
+position = Vector2(672, -1144)
+
 [node name="Routes" type="Node2D" parent="." unique_id=2018038044]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=237207130]
