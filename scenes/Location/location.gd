@@ -1,6 +1,7 @@
 class_name Location
 extends Node2D
 
+var current := false
 var discovered := false
 var closeBy := false
 @export var roomImage: Texture2D
@@ -16,6 +17,7 @@ func _on_ready() -> void:
 	game = game_board.get_parent().get_parent()
 
 func arrive_at() -> void:
+	current = true
 	discovered = true
 	if roomImage != null:
 		(get_node("Area2D/Sprite2D") as Sprite2D).texture = roomImage
@@ -38,6 +40,7 @@ func make_not_adjacent() -> void:
 		(get_node("Area2D/Sprite2D") as Sprite2D).texture = load("res://assets/locations/game_rooms_unknown_4.png")
 
 func move_away() -> void:
+	current = false
 	for item in availableRoutesLocationPairs:
 		(item.get("location") as Location).make_not_adjacent()
 

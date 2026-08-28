@@ -16,3 +16,9 @@ func start_event(eventType: String) -> void:
 
 func _on_ready() -> void:
 	(get_node("Board/GameBoard/Map/StartLocation") as Location).arrive_at()
+
+func get_current_location() -> Location:
+	for child : Location in get_node("Board/GameBoard/Map").get_children():
+		if child.current == true:
+			return child
+	return null

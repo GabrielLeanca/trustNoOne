@@ -9,7 +9,7 @@ var EVENT_TYPES = {
 var characterList = ["Oscar"]
 var initialCharactersAvailable = ["Oscar"]
 var actionList = []
-var initialCardsAvailable = []
+var initialCardsAvailable = ["Murder"]
 
 var explorers : Array[Explorer]
 var cards : Array[CardType]
@@ -22,7 +22,7 @@ func _init() -> void:
 	#read value of isFirstGame here
 	if isFirstGame:
 		charactersAvailable = initialCharactersAvailable
-		cardsAvailable = initialCharactersAvailable
+		cardsAvailable = initialCardsAvailable
 		setExplorerRoster()
 
 func setExplorerRoster():
@@ -32,7 +32,7 @@ func setExplorerRoster():
 		var explorer = script.new()
 		explorers.append(explorer)
 	for name in cardsAvailable:
-		var path = "res://scripts/Explorers/%s.gd" % name
+		var path = "res://scripts/Cards/%s.gd" % name
 		var script = load(path)
 		var card = script.new()
 		cards.append(card)

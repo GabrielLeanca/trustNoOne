@@ -4,7 +4,7 @@ extends Control
 var event: EventType
 var decisions: VBoxContainer
 
-func start(type: String):
+func start(type: String, targetLocation: Location = null, route : Route = null):
 	var script := load(type)
 	event = script.new()
 	(get_node("Title") as Label).text = event.get_title()
