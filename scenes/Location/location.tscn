@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://2phwkaffg6da"]
 
 [ext_resource type="Texture2D" uid="uid://virhdyqp6b0l" path="res://assets/locations/game_rooms_unknown_4.png" id="1_jx8ni"]
+[ext_resource type="Script" uid="uid://bmm13bt0x1dpi" path="res://scenes/Location/location.gd" id="1_xfai0"]
 
-[node name="Node2D" type="Node2D" unique_id=1909713092]
+[node name="Location" type="Node2D" unique_id=1909713092]
+script = ExtResource("1_xfai0")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1230166432]
 
@@ -19,3 +21,5 @@ end_cap_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1489431282]
 texture = ExtResource("1_jx8ni")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
