@@ -11,6 +11,7 @@ var initialCharactersAvailable = ["Oscar"]
 var actionList = []
 var initialCardsAvailable = []
 
+var explorers : Array[Explorer]
 
 var charactersAvailable = []
 var cardsAvailable = []
@@ -21,3 +22,11 @@ func _init() -> void:
 	if isFirstGame:
 		charactersAvailable = initialCharactersAvailable
 		cardsAvailable = initialCharactersAvailable
+		setExplorerRoster()
+
+func setExplorerRoster():
+	for name in charactersAvailable:
+		var path = "res://scripts/Explorers/%s.gd" % name
+		var script = load(path)
+		var explorer = script.new()
+		explorers.append(explorer)

@@ -24,7 +24,6 @@ func start(type: String):
 
 
 func _on_button_pressed(button):
-	print("happened")
 	if button.text == "Cancel":
 		for child in decisions.get_children():
 			child.queue_free()
