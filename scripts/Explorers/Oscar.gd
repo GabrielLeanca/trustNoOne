@@ -8,3 +8,4 @@ func _init() -> void:
 	tired = false
 	agitation = 10 #counter until they act; 0 means something bad will generally happen
 	role = "Cartographer"
+	goal = "MurderLeader"

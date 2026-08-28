@@ -6,6 +6,7 @@ class_name Explorer
 @export var tired := false
 @export var agitation := 10 #counter until they act; 0 means something bad will generally happen
 @export var role := ""
+@export var goal := ""
 
 func _init() -> void:
 	pass
