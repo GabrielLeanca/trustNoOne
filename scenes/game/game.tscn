@@ -24,3 +24,6 @@ expand_mode = 1
 [node name="GameBoard" parent="Board" unique_id=1010808148 instance=ExtResource("2_0sr1o")]
 
 [node name="UserInterface" parent="." unique_id=1179492198 instance=ExtResource("2_7h61r")]
+
+[node name="PauseMenu" type="CanvasLayer" parent="." unique_id=519661781]
+layer = 200
