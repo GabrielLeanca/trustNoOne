@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://b42utfkijwdh2"]
 
-[ext_resource type="Script" uid="uid://t37as8fhgx5b" path="res://scenes/game/game.gd" id="1_sul5r"]
+[ext_resource type="Script" uid="uid://cm1yin06ggh48" path="res://scenes/Game/game.gd" id="1_sul5r"]
 [ext_resource type="PackedScene" uid="uid://dipd0hkjluiol" path="res://scenes/GameBoard/game_board.tscn" id="2_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://xfeon26dc8vt" path="res://scenes/UI/user_interface.tscn" id="2_7h61r"]
 [ext_resource type="Texture2D" uid="uid://c1r41v4irbxdj" path="res://assets/map/game_frame.png" id="2_kelw5"]
+[ext_resource type="PackedScene" uid="uid://ceqkgfjia38pj" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="5_lfrn8"]
 
-[node name="Game" type="Node2D" unique_id=61587304]
+[node name="Game" type="Node" unique_id=2037343921]
+process_mode = 3
 script = ExtResource("1_sul5r")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1287745305]
@@ -23,7 +25,12 @@ expand_mode = 1
 
 [node name="GameBoard" parent="Board" unique_id=1010808148 instance=ExtResource("2_0sr1o")]
 
-[node name="UserInterface" parent="." unique_id=1179492198 instance=ExtResource("2_7h61r")]
+[node name="HudLayer" parent="." unique_id=1179492198 instance=ExtResource("2_7h61r")]
+process_mode = 1
+layer = 10
 
-[node name="PauseMenu" type="CanvasLayer" parent="." unique_id=519661781]
-layer = 200
+[node name="PauseLayer" type="CanvasLayer" parent="." unique_id=2034007766]
+process_mode = 2
+layer = 100
+
+[node name="PauseMenu" parent="PauseLayer" unique_id=2076677108 instance=ExtResource("5_lfrn8")]

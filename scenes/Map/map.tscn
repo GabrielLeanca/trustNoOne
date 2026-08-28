@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c1rdij4fkjd8p"]
 
 [ext_resource type="Texture2D" uid="uid://c1r41v4irbxdj" path="res://assets/map/game_frame.png" id="1_sxf4j"]
-[ext_resource type="PackedScene" uid="uid://b42utfkijwdh2" path="res://scenes/game/game.tscn" id="2_tqkkf"]
+[ext_resource type="PackedScene" uid="uid://b42utfkijwdh2" path="res://scenes/Game/game.tscn" id="2_tqkkf"]
 
 [node name="Root" type="Node2D" unique_id=515462658]
 
