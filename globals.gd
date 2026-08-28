@@ -1,5 +1,11 @@
 extends Node
 
+var EVENT_TYPES = {
+	"darkness": null,
+	"walk": null,
+	"closeBy": "res://scripts/EventTypes/closeBy.gd"
+}
+
 var characterList = ["Oscar"]
 var initialCharactersAvailable = ["Oscar"]
 var actionList = []

@@ -6,15 +6,19 @@ var closeBy := false
 @export var roomImage: Texture2D
 @export var roomType: String
 var game_board : GameBoard
+var game : Game
 
 var availableRoutesLocationPairs : Array[Dictionary] = []
 
 
 func _on_ready() -> void:
 	game_board = get_parent().get_parent()
+	game = game_board.get_parent().get_parent()
 
 func arrive_at() -> void:
 	discovered = true
+	if roomImage != null:
+		(get_node("Area2D/Sprite2D") as Sprite2D).texture = roomImage
 	for route in game_board.routes:
 		if self == route.location1:
 			availableRoutesLocationPairs.append({"route":route,"location":route.location2})
@@ -39,8 +43,9 @@ func move_away() -> void:
 
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-	if event.button_index == MOUSE_BUTTON_LEFT:
-		if closeBy && !discovered:
-			pass
-		if discovered:
-			pass
+	if event is InputEventMouseButton && event.pressed:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if closeBy && !discovered:
+				game.start_event(Globals.EVENT_TYPES.closeBy)
+			if discovered:
+				pass

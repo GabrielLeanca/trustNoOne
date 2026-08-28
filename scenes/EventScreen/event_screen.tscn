@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://n74k5w2tik2y"]
+
+[ext_resource type="Script" uid="uid://b4rd501pgs581" path="res://scenes/EventScreen/event_screen.gd" id="1_h2wyb"]
+
+[node name="EventScreen" type="Control" unique_id=1399689263]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h2wyb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=479872532]
+layout_mode = 0
+offset_right = 1912.0
+offset_bottom = 1080.0
+color = Color(0.20871013, 0.20871016, 0.20871013, 1)
+
+[node name="Title" type="Label" parent="." unique_id=1415730539]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 120.0
+offset_right = 952.0
+offset_bottom = 232.0
+
+[node name="Text" type="Label" parent="." unique_id=410166399]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 320.0
+offset_right = 1112.0
+offset_bottom = 552.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=488124623]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 584.0
+offset_right = 1352.0
+offset_bottom = 960.0
+
+[node name="Decisions" type="VBoxContainer" parent="ScrollContainer" unique_id=1867552417]
+layout_mode = 2

@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dipd0hkjluiol" path="res://scenes/GameBoard/game_board.tscn" id="2_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://xfeon26dc8vt" path="res://scenes/UI/user_interface.tscn" id="2_7h61r"]
 [ext_resource type="Texture2D" uid="uid://c1r41v4irbxdj" path="res://assets/map/game_frame.png" id="2_kelw5"]
+[ext_resource type="PackedScene" uid="uid://n74k5w2tik2y" path="res://scenes/EventScreen/event_screen.tscn" id="5_54y65"]
 [ext_resource type="PackedScene" uid="uid://ceqkgfjia38pj" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="5_lfrn8"]
 
 [node name="Game" type="Node" unique_id=2037343921]
@@ -11,6 +12,7 @@ process_mode = 3
 script = ExtResource("1_sul5r")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1287745305]
+layer = 2
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1685438675]
 anchors_preset = 15
@@ -18,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("2_kelw5")
 expand_mode = 1
 
@@ -29,8 +32,15 @@ expand_mode = 1
 process_mode = 1
 layer = 10
 
+[node name="EventLayer" type="CanvasLayer" parent="." unique_id=1493330592]
+
+[node name="EventScreen" parent="EventLayer" unique_id=1399689263 instance=ExtResource("5_54y65")]
+visible = false
+
 [node name="PauseLayer" type="CanvasLayer" parent="." unique_id=2034007766]
 process_mode = 2
-layer = 100
+layer = 1000
 
 [node name="PauseMenu" parent="PauseLayer" unique_id=2076677108 instance=ExtResource("5_lfrn8")]
+
+[connection signal="ready" from="." to="." method="_on_ready"]
