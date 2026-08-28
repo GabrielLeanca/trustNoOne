@@ -12,6 +12,7 @@ var actionList = []
 var initialCardsAvailable = []
 
 var explorers : Array[Explorer]
+var cards : Array[CardType]
 
 var charactersAvailable = []
 var cardsAvailable = []
@@ -30,3 +31,8 @@ func setExplorerRoster():
 		var script = load(path)
 		var explorer = script.new()
 		explorers.append(explorer)
+	for name in cardsAvailable:
+		var path = "res://scripts/Explorers/%s.gd" % name
+		var script = load(path)
+		var card = script.new()
+		cards.append(card)
