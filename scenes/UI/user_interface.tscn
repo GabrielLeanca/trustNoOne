@@ -1,32 +1,32 @@
 [gd_scene format=3 uid="uid://xfeon26dc8vt"]
 
-[node name="UserInterface" type="CanvasLayer"]
+[node name="UserInterface" type="CanvasLayer" unique_id=262683201]
 layer = 100
 
-[node name="ActionBar" type="Control" parent="."]
+[node name="ActionBar" type="Control" parent="." unique_id=301193068]
 layout_mode = 3
 anchors_preset = 0
 offset_top = 512.0
 offset_right = 1152.0
 offset_bottom = 648.0
 
-[node name="ActionScrollContainer" type="ScrollContainer" parent="ActionBar"]
+[node name="ActionScrollContainer" type="ScrollContainer" parent="ActionBar" unique_id=754524180]
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 136.0
 vertical_scroll_mode = 0
 
-[node name="ActionCategoriesVBox" type="VBoxContainer" parent="ActionBar/ActionScrollContainer"]
+[node name="ActionCategoriesVBox" type="VBoxContainer" parent="ActionBar/ActionScrollContainer" unique_id=598847047]
 custom_minimum_size = Vector2(10, 10)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="NonCharHBox" type="HBoxContainer" parent="ActionBar/ActionScrollContainer/ActionCategoriesVBox"]
+[node name="NonCharHBox" type="HBoxContainer" parent="ActionBar/ActionScrollContainer/ActionCategoriesVBox" unique_id=1446892029]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
-[node name="CharcacterHBox" type="HBoxContainer" parent="ActionBar/ActionScrollContainer/ActionCategoriesVBox"]
+[node name="CharcacterHBox" type="HBoxContainer" parent="ActionBar/ActionScrollContainer/ActionCategoriesVBox" unique_id=656570439]
 layout_mode = 2
 size_flags_vertical = 3

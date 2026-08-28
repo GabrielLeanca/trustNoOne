@@ -14,7 +14,7 @@ script = ExtResource("1_y8vs0")
 position = Vector2(-367.99997, -7.999996)
 rotation = 0.21109334
 scale = Vector2(6.7774158, 1)
-location1 = NodePath("../../Map/Location")
+location1 = NodePath("../../Map/StartLocation")
 location2 = NodePath("../../Map/Node2D3")
 
 [node name="Route2" parent="Routes" unique_id=1965867682 node_paths=PackedStringArray("location1", "location2") instance=ExtResource("2_vanu7")]
@@ -28,7 +28,7 @@ location2 = NodePath("../../Map/Node2D3")
 position = Vector2(0, 32)
 rotation = -1.808417
 scale = Vector2(6.2185125, 1)
-location1 = NodePath("../../Map/Location")
+location1 = NodePath("../../Map/StartLocation")
 location2 = NodePath("../../Map/Node2D2")
 
 [node name="Route4" parent="Routes" unique_id=1192889277 node_paths=PackedStringArray("location1", "location2") instance=ExtResource("2_vanu7")]
@@ -215,7 +215,7 @@ location2 = NodePath("../../Map/Node2D13")
 
 [node name="Map" type="Node2D" parent="." unique_id=283144555]
 
-[node name="Location" parent="Map" unique_id=424216908 instance=ExtResource("2_e2g2t")]
+[node name="StartLocation" parent="Map" unique_id=424216908 instance=ExtResource("2_e2g2t")]
 position = Vector2(0, 144)
 
 [node name="Node2D" parent="Map" unique_id=1382840208 instance=ExtResource("2_e2g2t")]
