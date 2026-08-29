@@ -49,6 +49,17 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 	if event is InputEventMouseButton && event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if closeBy && !discovered:
-				game.start_event(Globals.EVENT_TYPES.closeBy)
+				var chosenRoute: Route = null
+				for route in game_board.routes:
+					if route.location1.current == true || route.location2.current == true:
+						if route.location1 == self || route.location2 == self:
+							chosenRoute = route
+							break
+				var options : EventOptions = EventOptions.new("Nearby")
+				options.image = load("res://assets/cards/game_cards_explore_1.png")
+				options.location = self
+				options.route = chosenRoute
+				options.isCancelable = true
+				game.start_event(options)
 			if discovered:
 				pass

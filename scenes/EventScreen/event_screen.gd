@@ -4,8 +4,15 @@ extends Control
 var event: EventType
 var decisions: VBoxContainer
 
-func start(type: String, targetLocation: Location = null, route : Route = null):
-	var script := load(type)
+var location: Location = null
+var route: Route = null
+
+func start(options: EventOptions):
+	if options.location != null:
+		location = options.location
+	if options.route != null:
+		route = options.route
+	var script := load(options.path)
 	event = script.new()
 	(get_node("Title") as Label).text = event.get_title()
 	(get_node("Text") as Label).text = event.get_text()
@@ -15,10 +22,11 @@ func start(type: String, targetLocation: Location = null, route : Route = null):
 		decisions.add_child(button)
 		button.pressed.connect(_on_button_pressed.bind(button))
 		button.text = decision
-	var cancelButton := Button.new()
-	cancelButton.text = "Cancel"
-	cancelButton.pressed.connect(_on_button_pressed.bind(cancelButton))
-	decisions.add_child(cancelButton)
+	if options.isCancelable:
+		var cancelButton := Button.new()
+		cancelButton.text = "Cancel"
+		cancelButton.pressed.connect(_on_button_pressed.bind(cancelButton))
+		decisions.add_child(cancelButton)
 	visible = true
 
 

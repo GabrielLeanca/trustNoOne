@@ -13,8 +13,10 @@ func _input(event: InputEvent) -> void:
 			pause()
 			pause_menu.visible = !pause_menu.visible
 
-func start_event(eventType: String) -> void:
-	(get_node("EventLayer/EventScreen") as EventScreen).start(eventType)
+func start_event(options: EventOptions) -> void:
+	(get_node("EventLayer/EventScreen") as EventScreen).start(options)
+
+
 
 func _on_ready() -> void:
 	(get_node("Board/GameBoard/Map/StartLocation") as Location).arrive_at()

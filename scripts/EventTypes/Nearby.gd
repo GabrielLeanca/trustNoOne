@@ -1,4 +1,4 @@
-class_name CloseByEvent
+class_name NearbyEvent
 extends EventType
 
 var decisions: Array[String] = []

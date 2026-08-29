@@ -3,7 +3,7 @@ extends Node
 var EVENT_TYPES = {
 	"darkness": null,
 	"walk": null,
-	"closeBy": "res://scripts/EventTypes/closeBy.gd"
+	"Nearby": "res://scripts/EventTypes/Nearby.gd"
 }
 
 var characterList = ["Oscar"]
