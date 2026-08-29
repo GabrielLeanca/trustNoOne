@@ -9,8 +9,8 @@ func _input(event: InputEvent) -> void:
 		pause_menu.mouse_filter = Control.MOUSE_FILTER_STOP
 		pause_menu.visible = !pause_menu.visible
 
-func start_event(eventType: String, targetLocation: Location = null, targetRoute: Route = null) -> void:
-	(get_node("EventLayer/EventScreen") as EventScreen).start(eventType, targetLocation, targetRoute)
+func start_event(options: EventOptions) -> void:
+	(get_node("EventLayer/EventScreen") as EventScreen).start(options)
 
 
 

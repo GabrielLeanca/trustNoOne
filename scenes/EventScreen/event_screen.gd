@@ -7,12 +7,12 @@ var decisions: VBoxContainer
 var location: Location = null
 var route: Route = null
 
-func start(type: String, givenLocation: Location = null, givenRoute : Route = null):
-	if givenLocation != null:
-		location = givenLocation
-	if givenRoute != null:
-		route = givenRoute
-	var script := load(type)
+func start(options: EventOptions):
+	if options.location != null:
+		location = options.location
+	if options.route != null:
+		route = options.route
+	var script := load(options.path)
 	event = script.new()
 	(get_node("Title") as Label).text = event.get_title()
 	(get_node("Text") as Label).text = event.get_text()
@@ -22,10 +22,11 @@ func start(type: String, givenLocation: Location = null, givenRoute : Route = nu
 		decisions.add_child(button)
 		button.pressed.connect(_on_button_pressed.bind(button))
 		button.text = decision
-	var cancelButton := Button.new()
-	cancelButton.text = "Cancel"
-	cancelButton.pressed.connect(_on_button_pressed.bind(cancelButton))
-	decisions.add_child(cancelButton)
+	if options.isCancelable:
+		var cancelButton := Button.new()
+		cancelButton.text = "Cancel"
+		cancelButton.pressed.connect(_on_button_pressed.bind(cancelButton))
+		decisions.add_child(cancelButton)
 	visible = true
 
 

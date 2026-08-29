@@ -4,4 +4,4 @@ extends Node2D
 
 @export var location1: Location
 @export var location2: Location
-@export var obstacles: Array[Node]
+@export var obstacles: Array[Obstacle]

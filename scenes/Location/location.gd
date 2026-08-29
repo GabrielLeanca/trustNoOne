@@ -57,6 +57,11 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 						if route.location1 == self || route.location2 == self:
 							chosenRoute = route
 							break
-				game.start_event(Globals.EVENT_TYPES.closeBy, self, chosenRoute)
+				var options : EventOptions = EventOptions.new("Nearby")
+				options.image = load("res://assets/cards/game_cards_explore_1.png")
+				options.location = self
+				options.route = chosenRoute
+				options.isCancelable = true
+				game.start_event(options)
 			if discovered:
 				pass
