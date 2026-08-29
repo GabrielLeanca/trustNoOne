@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ceqkgfjia38pj" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="5_lfrn8"]
 [ext_resource type="Texture2D" uid="uid://dc80l7kccmfnx" path="res://assets/UI/menu_icon.png" id="5_rwo3j"]
 [ext_resource type="PackedScene" uid="uid://b3nanpce7chdm" path="res://scenes/UI/HUD/ItemsDisplay/items_display.tscn" id="6_1p5ji"]
+[ext_resource type="Script" uid="uid://cb67qrdllm00k" path="res://scenes/UI/HUD/ItemsDisplay/items_display.gd" id="7_5rpqn"]
 [ext_resource type="Texture2D" uid="uid://d4lid73h23yvk" path="res://assets/UI/explorers_icon.png" id="7_ph5vl"]
 [ext_resource type="PackedScene" uid="uid://b3dr1lscr6sn0" path="res://scenes/UI/HUD/CharacterMenu/characters_menu.tscn" id="8_ph5vl"]
 
@@ -54,6 +55,7 @@ anchors_preset = -1
 anchor_left = 0.50364584
 anchor_top = 0.9064815
 grow_vertical = 0
+script = ExtResource("7_5rpqn")
 metadata/_edit_use_anchors_ = true
 
 [node name="Explorers" type="Button" parent="HudLayer" unique_id=1830933919]
