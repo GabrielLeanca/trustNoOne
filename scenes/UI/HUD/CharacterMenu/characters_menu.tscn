@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://b3dr1lscr6sn0"]
 
 [ext_resource type="Script" uid="uid://dqwe8ym4xuaex" path="res://scenes/UI/HUD/CharacterMenu/characters_menu.gd" id="1_2mijj"]
-[ext_resource type="Texture2D" uid="uid://b2u8hh4xaltke" path="res://icon.svg" id="1_q5ln2"]
 [ext_resource type="PackedScene" uid="uid://dw744yijia1u4" path="res://scenes/UI/HUD/CharacterCard/character_card.tscn" id="2_2mijj"]
+[ext_resource type="Texture2D" uid="uid://bxxgj88ses88w" path="res://assets/UI/left.png" id="2_rvldr"]
+[ext_resource type="Texture2D" uid="uid://byjq40cpoifbn" path="res://assets/UI/right.png" id="4_7ayau"]
 
 [node name="CharactersMenu" type="Control" unique_id=515895205]
+process_mode = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -36,14 +38,14 @@ alignment = 1
 
 [node name="Left" type="Button" parent="CenterContainer/HBoxContainer" unique_id=1077619276]
 layout_mode = 2
-icon = ExtResource("1_q5ln2")
+icon = ExtResource("2_rvldr")
 
 [node name="CharacterCard" parent="CenterContainer/HBoxContainer" unique_id=175464718 instance=ExtResource("2_2mijj")]
 layout_mode = 2
 
 [node name="Right" type="Button" parent="CenterContainer/HBoxContainer" unique_id=797726715]
 layout_mode = 2
-icon = ExtResource("1_q5ln2")
+icon = ExtResource("4_7ayau")
 
 [connection signal="pressed" from="CenterContainer/HBoxContainer/Left" to="." method="_on_left_pressed"]
 [connection signal="pressed" from="CenterContainer/HBoxContainer/Right" to="." method="_on_right_pressed"]
