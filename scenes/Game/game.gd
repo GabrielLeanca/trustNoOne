@@ -22,3 +22,9 @@ func get_current_location() -> Location:
 		if child.current == true:
 			return child
 	return null
+
+
+func _on_button_pressed() -> void:
+	get_tree().paused = !get_tree().paused
+	pause_menu.mouse_filter = Control.MOUSE_FILTER_STOP
+	pause_menu.visible = !pause_menu.visible

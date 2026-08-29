@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c1r41v4irbxdj" path="res://assets/map/game_frame.png" id="2_kelw5"]
 [ext_resource type="PackedScene" uid="uid://n74k5w2tik2y" path="res://scenes/EventScreen/event_screen.tscn" id="5_54y65"]
 [ext_resource type="PackedScene" uid="uid://ceqkgfjia38pj" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="5_lfrn8"]
+[ext_resource type="Texture2D" uid="uid://b2u8hh4xaltke" path="res://icon.svg" id="5_t5wam"]
 
 [node name="Game" type="Node" unique_id=2037343921]
 process_mode = 3
@@ -32,6 +33,19 @@ expand_mode = 1
 process_mode = 1
 layer = 10
 
+[node name="Button" type="Button" parent="HudLayer" unique_id=1284370111]
+process_mode = 1
+anchors_preset = -1
+anchor_right = 0.0546875
+anchor_bottom = 0.094444446
+text = "Esc"
+icon = ExtResource("5_t5wam")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
 [node name="EventLayer" type="CanvasLayer" parent="." unique_id=1493330592]
 
 [node name="EventScreen" parent="EventLayer" unique_id=1399689263 instance=ExtResource("5_54y65")]
@@ -44,3 +58,4 @@ layer = 1000
 [node name="PauseMenu" parent="PauseLayer" unique_id=2076677108 instance=ExtResource("5_lfrn8")]
 
 [connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="HudLayer/Button" to="." method="_on_button_pressed"]

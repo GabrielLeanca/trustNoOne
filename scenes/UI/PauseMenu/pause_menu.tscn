@@ -45,9 +45,20 @@ text = "Menu"
 layout_mode = 2
 text = "Resume"
 
+[node name="Credits" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1337056589]
+layout_mode = 2
+text = "Credits"
+
+[node name="CreditsText" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1120505402]
+layout_mode = 2
+text = "Ali, Has, Gaby"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1015241765]
 layout_mode = 2
 text = "Quit"
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
