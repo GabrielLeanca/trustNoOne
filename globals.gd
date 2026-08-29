@@ -6,8 +6,8 @@ var EVENT_TYPES = {
 	"Nearby": "res://scripts/EventTypes/Nearby.gd"
 }
 
-var characterList = ["Oscar"]
-var initialCharactersAvailable = ["Oscar"]
+var characterList = ["Oscar", "Constantine"]
+var initialCharactersAvailable = ["Oscar", "Constantine"]
 var actionList = []
 var initialCardsAvailable = ["Murder"]
 

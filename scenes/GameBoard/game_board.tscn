@@ -4,6 +4,21 @@
 [ext_resource type="PackedScene" uid="uid://2phwkaffg6da" path="res://scenes/Location/location.tscn" id="2_e2g2t"]
 [ext_resource type="PackedScene" uid="uid://bmvk445eqleaq" path="res://scenes/Route/route.tscn" id="2_vanu7"]
 [ext_resource type="Script" uid="uid://dfirl7c75sb4u" path="res://scenes/GameBoard/camera_2d.gd" id="3_50yu2"]
+[ext_resource type="Texture2D" uid="uid://d28uowy6qj254" path="res://assets/locations/game_rooms_rest_2.png" id="4_sr1bp"]
+[ext_resource type="Texture2D" uid="uid://c3ggrqi1v8liv" path="res://assets/locations/game_rooms_burial_1.png" id="5_ksaou"]
+[ext_resource type="Texture2D" uid="uid://cb0mktqme30mt" path="res://assets/locations/game_rooms1.png" id="6_6x6t2"]
+[ext_resource type="Texture2D" uid="uid://befdrjjkkblgh" path="res://assets/locations/game_rooms2.png" id="7_a6nfp"]
+[ext_resource type="Texture2D" uid="uid://mwtnncxy52o" path="res://assets/locations/game_rooms_rest_6.png" id="8_122a3"]
+[ext_resource type="Texture2D" uid="uid://drdchl0tufvg5" path="res://assets/locations/game_rooms_treasure_8.png" id="9_122a3"]
+[ext_resource type="Texture2D" uid="uid://bhaegaie64env" path="res://assets/locations/game_rooms_treasure_1.png" id="10_y2h4d"]
+[ext_resource type="Texture2D" uid="uid://bhu72bpb8712" path="res://assets/locations/game_rooms_trap_6.png" id="11_f4tvl"]
+[ext_resource type="Texture2D" uid="uid://doltrpl5go8sw" path="res://assets/locations/game_rooms_trap_5.png" id="12_hvas4"]
+[ext_resource type="Texture2D" uid="uid://ufaclm8ldrh" path="res://assets/locations/game_rooms_burial_2.png" id="13_hvas4"]
+[ext_resource type="Texture2D" uid="uid://4h2kbg7ah00y" path="res://assets/locations/game_rooms3.png" id="14_m5bi1"]
+[ext_resource type="Texture2D" uid="uid://b1j18qxkb113r" path="res://assets/locations/game_rooms_rest_1.png" id="15_6i4ev"]
+[ext_resource type="Texture2D" uid="uid://dnhhd4hgx105d" path="res://assets/locations/game_rooms_treasure_4.png" id="16_w5paf"]
+[ext_resource type="Texture2D" uid="uid://dap3foqsq41y3" path="res://assets/locations/game_rooms4.png" id="17_3fgsw"]
+[ext_resource type="Texture2D" uid="uid://diskvmne6skjh" path="res://assets/locations/game_rooms_treasure_7.png" id="18_jfk8d"]
 
 [node name="GameBoard" type="Node2D" unique_id=1430048051]
 script = ExtResource("1_y8vs0")
@@ -217,60 +232,98 @@ location2 = NodePath("../../Map/Node2D13")
 
 [node name="StartLocation" parent="Map" unique_id=424216908 instance=ExtResource("2_e2g2t")]
 position = Vector2(0, 144)
+roomImage = ExtResource("4_sr1bp")
+roomType = "Rest"
 
 [node name="Node2D" parent="Map" unique_id=1382840208 instance=ExtResource("2_e2g2t")]
 position = Vector2(464, -56)
+roomImage = ExtResource("5_ksaou")
+roomType = "Burial"
 
 [node name="Node2D2" parent="Map" unique_id=1384561897 instance=ExtResource("2_e2g2t")]
 position = Vector2(-88, -296)
+roomImage = ExtResource("6_6x6t2")
+roomType = "Trap"
 
 [node name="Node2D3" parent="Map" unique_id=534435143 instance=ExtResource("2_e2g2t")]
 position = Vector2(-472, -24)
+roomImage = ExtResource("7_a6nfp")
+roomType = "Trap"
 
 [node name="Node2D4" parent="Map" unique_id=423447346 instance=ExtResource("2_e2g2t")]
 position = Vector2(-720, -448)
+roomImage = ExtResource("8_122a3")
+roomType = "Rest"
 
 [node name="Node2D5" parent="Map" unique_id=1731290586 instance=ExtResource("2_e2g2t")]
 position = Vector2(472, -464)
+roomImage = ExtResource("9_122a3")
+roomType = "Treasure"
 
 [node name="Node2D6" parent="Map" unique_id=175114452 instance=ExtResource("2_e2g2t")]
 position = Vector2(1064, -784)
+roomImage = ExtResource("9_122a3")
+roomType = "Treasure"
 
 [node name="Node2D7" parent="Map" unique_id=1953314388 instance=ExtResource("2_e2g2t")]
 position = Vector2(984, -320)
+roomImage = ExtResource("10_y2h4d")
+roomType = "Treasure"
 
 [node name="Node2D8" parent="Map" unique_id=932333608 instance=ExtResource("2_e2g2t")]
 position = Vector2(-648, -1112)
+roomImage = ExtResource("11_f4tvl")
+roomType = "Trap"
 
 [node name="Node2D9" parent="Map" unique_id=817316429 instance=ExtResource("2_e2g2t")]
 position = Vector2(-72, -672)
+roomImage = ExtResource("12_hvas4")
+roomType = "Trap"
 
 [node name="Node2D10" parent="Map" unique_id=2094231831 instance=ExtResource("2_e2g2t")]
 position = Vector2(488, -896)
+roomImage = ExtResource("13_hvas4")
+roomType = "Burial"
 
 [node name="Node2D11" parent="Map" unique_id=1879413588 instance=ExtResource("2_e2g2t")]
 position = Vector2(1016, 32)
+roomImage = ExtResource("14_m5bi1")
+roomType = "Trap"
 
 [node name="Node2D12" parent="Map" unique_id=1733145140 instance=ExtResource("2_e2g2t")]
 position = Vector2(1472, -152)
+roomImage = ExtResource("7_a6nfp")
+roomType = "Trap"
 
 [node name="Node2D13" parent="Map" unique_id=1287255004 instance=ExtResource("2_e2g2t")]
 position = Vector2(1688, -536)
+roomImage = ExtResource("15_6i4ev")
+roomType = "Rest"
 
 [node name="Node2D14" parent="Map" unique_id=1609052314 instance=ExtResource("2_e2g2t")]
 position = Vector2(1512, -1064)
+roomImage = ExtResource("10_y2h4d")
+roomType = "Treasure"
 
 [node name="Node2D15" parent="Map" unique_id=402800751 instance=ExtResource("2_e2g2t")]
 position = Vector2(-88, -1168)
+roomImage = ExtResource("16_w5paf")
+roomType = "Treasure"
 
 [node name="Node2D16" parent="Map" unique_id=2127598735 instance=ExtResource("2_e2g2t")]
 position = Vector2(416, -1304)
+roomImage = ExtResource("17_3fgsw")
+roomType = "Trap"
 
 [node name="Node2D17" parent="Map" unique_id=1900583531 instance=ExtResource("2_e2g2t")]
 position = Vector2(1056, -1272)
+roomImage = ExtResource("18_jfk8d")
+roomType = "Treasure"
 
 [node name="Node2D18" parent="Map" unique_id=1909713092 instance=ExtResource("2_e2g2t")]
 position = Vector2(1904, -1392)
+roomImage = ExtResource("14_m5bi1")
+roomType = "Trap"
 
 [node name="Node2D19" parent="Map" unique_id=869010811 instance=ExtResource("2_e2g2t")]
 position = Vector2(2120, -920)
