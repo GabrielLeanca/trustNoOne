@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dw744yijia1u4"]
+
+[ext_resource type="Script" uid="uid://cfmt2jpsuh3g4" path="res://scenes/UI/HUD/CharacterCard/character_card.gd" id="1_tsuy2"]
+
+[node name="CharacterCard" type="VBoxContainer" unique_id=175464718]
+anchors_preset = -1
+anchor_right = 0.18177083
+anchor_bottom = 0.61203706
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tsuy2")
+metadata/_edit_use_anchors_ = true
+
+[node name="Avatar" type="TextureRect" parent="." unique_id=1949672895]
+layout_mode = 2
+expand_mode = 5
+
+[node name="Name" type="Label" parent="." unique_id=1576605148]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="." unique_id=1577297487]
+layout_mode = 2
+horizontal_alignment = 1
