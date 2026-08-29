@@ -18,6 +18,7 @@ func _on_ready() -> void:
 
 func arrive_at() -> void:
 	current = true
+	get_node("Area2D/Line2D").visible = true
 	discovered = true
 	if roomImage != null:
 		(get_node("Area2D/Sprite2D") as Sprite2D).texture = roomImage
@@ -41,6 +42,7 @@ func make_not_adjacent() -> void:
 
 func move_away() -> void:
 	current = false
+	get_node("Area2D/Line2D").visible = false
 	for item in availableRoutesLocationPairs:
 		(item.get("location") as Location).make_not_adjacent()
 
