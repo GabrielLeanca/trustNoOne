@@ -20,10 +20,20 @@ layout_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Role" type="Label" parent="." unique_id=1914805269]
+[node name="RoleContainer" type="HBoxContainer" parent="." unique_id=283655280]
 layout_mode = 2
+alignment = 1
+
+[node name="Role" type="Label" parent="RoleContainer" unique_id=1914805269]
+layout_mode = 2
+size_flags_horizontal = 3
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Icon" type="TextureRect" parent="RoleContainer" unique_id=801912910]
+layout_mode = 2
+size_flags_horizontal = 3
+expand_mode = 5
 
 [node name="Description" type="Label" parent="." unique_id=1577297487]
 layout_mode = 2
