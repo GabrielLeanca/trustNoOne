@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b3dr1lscr6sn0"]
+
+[ext_resource type="Script" uid="uid://dqwe8ym4xuaex" path="res://scenes/UI/HUD/CharacterMenu/characters_menu.gd" id="1_2mijj"]
+[ext_resource type="Texture2D" uid="uid://b2u8hh4xaltke" path="res://icon.svg" id="1_q5ln2"]
+[ext_resource type="PackedScene" uid="uid://dw744yijia1u4" path="res://scenes/UI/HUD/CharacterCard/character_card.tscn" id="2_2mijj"]
+
+[node name="CharactersMenu" type="Control" unique_id=515895205]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2mijj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1256614179]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.22745098)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1493368696]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer" unique_id=1441757884]
+layout_mode = 2
+alignment = 1
+
+[node name="Left" type="Button" parent="CenterContainer/HBoxContainer" unique_id=1077619276]
+layout_mode = 2
+icon = ExtResource("1_q5ln2")
+
+[node name="CharacterCard" parent="CenterContainer/HBoxContainer" unique_id=175464718 instance=ExtResource("2_2mijj")]
+layout_mode = 2
+
+[node name="Right" type="Button" parent="CenterContainer/HBoxContainer" unique_id=797726715]
+layout_mode = 2
+icon = ExtResource("1_q5ln2")
+
+[connection signal="pressed" from="CenterContainer/HBoxContainer/Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="CenterContainer/HBoxContainer/Right" to="." method="_on_right_pressed"]
