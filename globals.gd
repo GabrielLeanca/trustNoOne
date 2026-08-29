@@ -13,10 +13,12 @@ var initialCardsAvailable = ["Murder"]
 
 var explorers : Array[Explorer]
 var cards : Array[CardType]
+var items : Array[Item] = []
 
 var charactersAvailable = []
 var cardsAvailable = []
 var isFirstGame = true #if we want more runs, make these be read from file
+
 
 func _init() -> void:
 	#read value of isFirstGame here
