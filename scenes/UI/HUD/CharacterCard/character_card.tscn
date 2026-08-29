@@ -20,6 +20,11 @@ layout_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Role" type="Label" parent="." unique_id=1914805269]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Description" type="Label" parent="." unique_id=1577297487]
 layout_mode = 2
 horizontal_alignment = 1
