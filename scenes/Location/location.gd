@@ -18,6 +18,7 @@ func _on_ready() -> void:
 
 func arrive_at() -> void:
 	current = true
+	get_node("Area2D/Line2D").visible = true
 	discovered = true
 	if roomImage != null:
 		(get_node("Area2D/Sprite2D") as Sprite2D).texture = roomImage
@@ -41,6 +42,7 @@ func make_not_adjacent() -> void:
 
 func move_away() -> void:
 	current = false
+	get_node("Area2D/Line2D").visible = false
 	for item in availableRoutesLocationPairs:
 		(item.get("location") as Location).make_not_adjacent()
 
@@ -49,6 +51,12 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 	if event is InputEventMouseButton && event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if closeBy && !discovered:
-				game.start_event(Globals.EVENT_TYPES.closeBy)
+				var chosenRoute: Route = null
+				for route in game_board.routes:
+					if route.location1.current == true || route.location2.current == true:
+						if route.location1 == self || route.location2 == self:
+							chosenRoute = route
+							break
+				game.start_event(Globals.EVENT_TYPES.closeBy, self, chosenRoute)
 			if discovered:
 				pass

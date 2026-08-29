@@ -11,16 +11,16 @@ script = ExtResource("1_xfai0")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=939628530]
 polygon = PackedVector2Array(0, -125, 110, -60, 110, 60, 0, 125, -110, 60, -110, -60)
 
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1489431282]
+texture = ExtResource("1_jx8ni")
+
 [node name="Line2D" type="Line2D" parent="Area2D" unique_id=2031198972]
 visible = false
-points = PackedVector2Array(-100, 0, -50, -86.6, 50, -86.6, 100, 0, 50, 86.6, -50, 86.6, -100, 0)
-default_color = Color(0, 0, 0, 1)
+points = PackedVector2Array(0, -125, 110, -60, 110, 60, 0, 125, -110, 60, -110, -60, 0, -125)
+default_color = Color(0.5411889, 0.12806466, 0, 1)
 joint_mode = 2
 begin_cap_mode = 2
 end_cap_mode = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1489431282]
-texture = ExtResource("1_jx8ni")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
