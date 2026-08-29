@@ -50,7 +50,7 @@ func _on_button_pressed(button):
 		for child in decisions.get_children():
 			child.queue_free()
 		if options.eventOverride:
-			pass
+			start(options.eventOverride)
 		visible = false
 	else:
 		var newOptions = event.make_decision(button.get_index())

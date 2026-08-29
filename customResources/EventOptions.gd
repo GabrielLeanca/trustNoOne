@@ -16,6 +16,9 @@ var eventOverride: EventOptions = null #is used for when we want Cancel or Final
 
 var explorer: Explorer = null
 
+var arriveAtLocation := false
+
+
 func _init(type : String = "") -> void:
 	if type != "":
 		name = type
