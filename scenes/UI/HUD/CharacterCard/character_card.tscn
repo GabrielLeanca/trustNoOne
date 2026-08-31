@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://cfmt2jpsuh3g4" path="res://scenes/UI/HUD/CharacterCard/character_card.gd" id="1_tsuy2"]
 
 [node name="CharacterCard" type="VBoxContainer" unique_id=175464718]
+custom_minimum_size = Vector2(250, 0)
+custom_maximum_size = Vector2(300, -1)
 anchors_preset = -1
 anchor_right = 0.18177083
 anchor_bottom = 0.61203706
@@ -36,5 +38,7 @@ size_flags_horizontal = 3
 expand_mode = 5
 
 [node name="Description" type="Label" parent="." unique_id=1577297487]
+custom_maximum_size = Vector2(250, -1)
 layout_mode = 2
 horizontal_alignment = 1
+autowrap_mode = 2
