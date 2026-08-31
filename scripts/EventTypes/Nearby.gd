@@ -52,9 +52,6 @@ func make_decision(decisionIndex : int) -> EventOptions:
 		newEvent.text = text
 		newEvent.isFinal = true
 	if decision.name == "Explore":
-		newEvent = EventOptions.new("Rest")
-		newEvent.title = "A Quiet Walk"
-		newEvent.text = "The City of Greed is always perilous, but, for now, everything in our path is rather manageable. I could use this moment to have a private talk with one of my fellow explorers"
-		newEvent.location = options.location
-		newEvent.route = options.route
+		(Engine.get_main_loop().current_scene.get_current_location() as Location).move_away()
+		newEvent = getNextRouteEventOptions()
 	return newEvent

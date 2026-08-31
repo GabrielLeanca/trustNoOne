@@ -41,6 +41,8 @@ func start(newOptions: EventOptions):
 		cancelButton.text = "Ok"
 		cancelButton.pressed.connect(_on_button_pressed.bind(cancelButton))
 		decisions.add_child(cancelButton)
+	if options.arriveAtLocation:
+		options.location.arrive_at()
 	visible = true
 
 

@@ -4,9 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://2phwkaffg6da" path="res://scenes/Location/location.tscn" id="2_e2g2t"]
 [ext_resource type="PackedScene" uid="uid://bmvk445eqleaq" path="res://scenes/Route/route.tscn" id="2_vanu7"]
 [ext_resource type="Script" uid="uid://dfirl7c75sb4u" path="res://scenes/GameBoard/camera_2d.gd" id="3_50yu2"]
+[ext_resource type="Script" uid="uid://ccobvpud1wbbi" path="res://customResources/Obstacle.gd" id="3_ea2gg"]
 [ext_resource type="Texture2D" uid="uid://d28uowy6qj254" path="res://assets/locations/game_rooms_rest_2.png" id="4_sr1bp"]
 [ext_resource type="Texture2D" uid="uid://c3ggrqi1v8liv" path="res://assets/locations/game_rooms_burial_1.png" id="5_ksaou"]
-[ext_resource type="Texture2D" uid="uid://cb0mktqme30mt" path="res://assets/locations/game_rooms1.png" id="6_6x6t2"]
+[ext_resource type="Texture2D" uid="uid://bfhngh7v4kwa3" path="res://assets/locations/game_rooms_rest_4.png" id="6_jfk8d"]
 [ext_resource type="Texture2D" uid="uid://befdrjjkkblgh" path="res://assets/locations/game_rooms2.png" id="7_a6nfp"]
 [ext_resource type="Texture2D" uid="uid://mwtnncxy52o" path="res://assets/locations/game_rooms_rest_6.png" id="8_122a3"]
 [ext_resource type="Texture2D" uid="uid://drdchl0tufvg5" path="res://assets/locations/game_rooms_treasure_8.png" id="9_122a3"]
@@ -19,6 +20,11 @@
 [ext_resource type="Texture2D" uid="uid://dnhhd4hgx105d" path="res://assets/locations/game_rooms_treasure_4.png" id="16_w5paf"]
 [ext_resource type="Texture2D" uid="uid://dap3foqsq41y3" path="res://assets/locations/game_rooms4.png" id="17_3fgsw"]
 [ext_resource type="Texture2D" uid="uid://diskvmne6skjh" path="res://assets/locations/game_rooms_treasure_7.png" id="18_jfk8d"]
+
+[sub_resource type="Resource" id="Resource_sxovr"]
+script = ExtResource("3_ea2gg")
+name = "Rubble"
+metadata/_custom_type_script = "uid://ccobvpud1wbbi"
 
 [node name="GameBoard" type="Node2D" unique_id=1430048051]
 script = ExtResource("1_y8vs0")
@@ -45,6 +51,7 @@ rotation = -1.808417
 scale = Vector2(6.2185125, 1)
 location1 = NodePath("../../Map/StartLocation")
 location2 = NodePath("../../Map/Node2D2")
+obstacles = Array[ExtResource("3_ea2gg")]([SubResource("Resource_sxovr")])
 
 [node name="Route4" parent="Routes" unique_id=1192889277 node_paths=PackedStringArray("location1", "location2") instance=ExtResource("2_vanu7")]
 position = Vector2(-624, -488)
@@ -242,8 +249,8 @@ roomType = "Burial"
 
 [node name="Node2D2" parent="Map" unique_id=1384561897 instance=ExtResource("2_e2g2t")]
 position = Vector2(-88, -296)
-roomImage = ExtResource("6_6x6t2")
-roomType = "Trap"
+roomImage = ExtResource("6_jfk8d")
+roomType = "Rest"
 
 [node name="Node2D3" parent="Map" unique_id=534435143 instance=ExtResource("2_e2g2t")]
 position = Vector2(-472, -24)

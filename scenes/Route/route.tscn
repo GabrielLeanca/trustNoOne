@@ -8,3 +8,7 @@ script = ExtResource("1_gvrrw")
 
 [node name="Line2D" type="Line2D" parent="." unique_id=808605544]
 points = PackedVector2Array(0, 0, 50, 0)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2089794397]
+offset_right = 40.0
+offset_bottom = 40.0

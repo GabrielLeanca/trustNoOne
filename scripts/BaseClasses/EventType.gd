@@ -35,3 +35,15 @@ func create_arrival():
 		arrivalEvent.text = ""
 	arrivalEvent.arriveAtLocation = true
 	return arrivalEvent
+
+func getNextRouteEventOptions() -> EventOptions:
+	var newOptions : EventOptions
+	if options.route.obstacles != null && options.route.obstacles.size() > 0:
+		newOptions = EventOptions.new(options.route.obstacles[0].name)
+	else:
+		newOptions = EventOptions.new("Rest")
+		newOptions.title = "A Quiet Walk"
+		newOptions.text = "The City of Greed is always perilous, but, for now, everything in our path is rather manageable. I could use this moment to have a private talk with one of my fellow explorers"
+	newOptions.route = options.route
+	newOptions.location = options.location
+	return newOptions
